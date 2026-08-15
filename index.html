@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIPIAN Essential Oil - Premium Tiwai Onion Oil from East Kalimantan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#home" class="logo">TIPI<span>AN</span></a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#" onclick="openModal('login-modal'); return false;">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Aroma Alami, Kebaikan Sejati dari Kalimantan</h1>
+                <p>Premium essential oil crafted from the finest Tiwai onion of East Kalimantan, delivering nature's purest benefits for your wellbeing.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary">Shop Now</a>
+                    <a href="#about" class="btn btn-outline-light">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About TIPIAN Essential Oil</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="aset/profil.jpeg" alt="Profil TIPIAN Essential Oil">
+                </div>
+                <div class="about-text">
+                    <p>TIPIAN Essential Oil is a premium product born from the rich biodiversity of East Kalimantan, Indonesia. Our essential oil is extracted from the indigenous Tiwai onion, known for its exceptional therapeutic properties.</p>
+                    <p>We collaborate directly with local farmers in Kalimantan, ensuring ethical sourcing while supporting sustainable agricultural practices. Our production process preserves the beneficial compounds, delivering nature's purest form of wellness.</p>
+                    <p>Every bottle of TIPIAN Essential Oil represents our commitment to quality, purity, and the preservation of Kalimantan's unique biodiversity.</p>
+                    <a href="#benefits" class="btn btn-primary" style="margin-top: 20px;">Our Sustainability Promise</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners / Trust Badges -->
+    <section class="partners">
+        <div class="container">
+            <p class="partners-title">Didukung &amp; Dipercaya Oleh</p>
+            <div class="partners-grid">
+                <img src="aset/dicoding.png" alt="Logo Dicoding">
+                <img src="aset/KC.png" alt="Logo KC">
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits">
+        <div class="container">
+            <h2 class="section-title">Health Benefits</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌿</div>
+                    <h3>Antioxidant Powerhouse</h3>
+                    <p>Rich in antioxidants that help combat free radicals, slow down the aging process, and protect your cells from damage.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💤</div>
+                    <h3>Stress Relief</h3>
+                    <p>Our oil's soothing aroma helps reduce stress and anxiety levels, promoting better sleep and relaxation.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🦠</div>
+                    <h3>Antimicrobial</h3>
+                    <p>Naturally fights against bacteria, fungi, and viruses, making it an excellent addition to your wellness routine.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌬️</div>
+                    <h3>Respiratory Support</h3>
+                    <p>Helps clear nasal passages and promotes easier breathing, especially beneficial during allergy seasons.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💆</div>
+                    <h3>Muscle Relaxant</h3>
+                    <p>Effective in relieving muscle tension and joint pain when used in massage or aromatherapy.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧠</div>
+                    <h3>Cognitive Boost</h3>
+                    <p>Enhances mental clarity and focus, making it perfect for study or work environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <svg viewBox="0 0 100 130"><path d="M35 30 L35 45 Q35 50 30 55 L30 110 Q30 122 42 122 L58 122 Q70 122 70 110 L70 55 Q65 50 65 45 L65 30 Z" fill="#D98A9E"/><rect x="33" y="15" width="34" height="16" rx="2" fill="#F0C9D3"/></svg>
+                    </div>
+                    <div class="product-info">
+                        <h3>TIPIAN Essential Oil 30ml</h3>
+                        <p>Perfect for first-time users or travel purposes. Experience the benefits in our convenient 30ml bottle.</p>
+                        <div class="price">Rp 80.000</div>
+                        <button class="btn btn-primary" onclick="addToCart('TIPIAN Essential Oil 30ml', 80000)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <svg viewBox="0 0 100 150"><path d="M32 30 L32 45 Q32 50 27 56 L27 130 Q27 142 40 142 L60 142 Q73 142 73 130 L73 56 Q68 50 68 45 L68 30 Z" fill="#D98A9E"/><rect x="30" y="15" width="40" height="16" rx="2" fill="#F0C9D3"/></svg>
+                    </div>
+                    <div class="product-info">
+                        <h3>TIPIAN Essential Oil 50ml</h3>
+                        <p>Our best-selling size offering optimal value. The perfect balance between quantity and quality.</p>
+                        <div class="price">Rp 150.000</div>
+                        <button class="btn btn-primary" onclick="addToCart('TIPIAN Essential Oil 50ml', 150000)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <svg viewBox="0 0 100 170"><path d="M30 30 L30 45 Q30 52 24 58 L24 150 Q24 162 38 162 L62 162 Q76 162 76 150 L76 58 Q70 52 70 45 L70 30 Z" fill="#D98A9E"/><rect x="28" y="15" width="44" height="16" rx="2" fill="#F0C9D3"/></svg>
+                    </div>
+                    <div class="product-info">
+                        <h3>TIPIAN Essential Oil 100ml</h3>
+                        <p>Our premium family size for serious users. Offers the best value with long-lasting benefits.</p>
+                        <div class="price">Rp 280.000</div>
+                        <button class="btn btn-primary" onclick="addToCart('TIPIAN Essential Oil 100ml', 280000)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="aset/staff.png" alt="Foto tim TIPIAN">
+                    </div>
+                    <h4>Tim TIPIAN</h4>
+                    <span>Production &amp; Operations</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- After Sales Section -->
+    <section class="after-sales" id="after-sales">
+        <div class="container">
+            <h2 class="section-title">After Sales Service</h2>
+            <div class="after-sales-content">
+                <div class="guides">
+                    <div class="guide-item">
+                        <h3>Usage Guide</h3>
+                        <p><strong>Aromatherapy:</strong> Add 3-5 drops to your diffuser with water. Run for 30-60 minutes in a well-ventilated area.</p>
+                        <p><strong>Topical Use:</strong> Dilute 1-2 drops with a carrier oil (like coconut or jojoba oil) before applying to skin.</p>
+                        <p><strong>Massage:</strong> Mix 5-10 drops with 30ml carrier oil for a relaxing therapeutic massage.</p>
+                    </div>
+                    <div class="guide-item">
+                        <h3>Storage Tips</h3>
+                        <p>Store in a cool, dark place away from direct sunlight. Keep the bottle tightly closed when not in use.</p>
+                        <p>For best quality, use within 12 months of opening. The shelf life is typically 2-3 years when stored properly.</p>
+                    </div>
+                    <div class="guide-item">
+                        <h3>Quick Support</h3>
+                        <p>Need immediate assistance? Chat with our customer service via WhatsApp:</p>
+                        <button class="btn btn-primary" onclick="window.open('https://wa.me/6281234567890')">Chat on WhatsApp</button>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Contact Our Support Team</h3>
+                    <form id="supportForm" onsubmit="handleSupportSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="product-info">Product Information</option>
+                                <option value="usage-guide">Usage Questions</option>
+                                <option value="order-issue">Order Issue</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Points System Section -->
+    <section class="points-system" id="points-system">
+        <div class="container">
+            <h2 class="section-title">Member Points System</h2>
+            <div class="points-container">
+                <div class="points-info">
+                    <h3>Earn &amp; Redeem Points</h3>
+                    <p>Join our membership program and earn points with every purchase that can be redeemed for exclusive benefits:</p>
+                    <ul>
+                        <li>1 point for every Rp 1,000 spent</li>
+                        <li>10 bonus points for bottle returns (eco-friendly initiative)</li>
+                        <li>20 bonus points for product reviews</li>
+                        <li>Points never expire</li>
+                    </ul>
+                    <p>Redeem your points for discounts, free products, or exclusive gifts from East Kalimantan.</p>
+                </div>
+                <div class="points-calculator">
+                    <h3>Points Calculator</h3>
+                    <div class="form-group">
+                        <label for="purchase-amount">Purchase Amount (Rp)</label>
+                        <input type="number" id="purchase-amount" min="0" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="return-bottle"> Returning empty bottle?
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="write-review"> Writing a product review?
+                        </label>
+                    </div>
+                    <button class="btn btn-primary" onclick="calculatePoints()" style="width: 100%;">Calculate Points</button>
+                    <div id="points-result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Player Section -->
+    <section class="music-player" id="music">
+        <div class="container">
+            <h2 class="section-title">Relaxation Music</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 30px;">Enhance your aromatherapy experience with our curated relaxation music. Play these soothing sounds to complement your TIPIAN Essential Oil usage.</p>
+            <div class="player-container">
+                <h3>Now Playing: <span id="now-playing">Select a track</span></h3>
+                <audio id="audio-player" controls style="width: 100%; margin: 20px 0;"></audio>
+                <div class="playlist">
+                    <h4>Aromatherapy Playlist</h4>
+                    <div class="track" onclick="playTrack(this, 'Forest Sounds', 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3')">
+                        <span>Forest Sounds</span>
+                        <span>3:22</span>
+                    </div>
+                    <div class="track" onclick="playTrack(this, 'Meditation Harmony', 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3')">
+                        <span>Meditation Harmony</span>
+                        <span>4:15</span>
+                    </div>
+                    <div class="track" onclick="playTrack(this, 'Tiwai Morning', 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3')">
+                        <span>Tiwai Morning</span>
+                        <span>5:48</span>
+                    </div>
+                    <div class="track" onclick="playTrack(this, 'Borneo Rain', 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3')">
+                        <span>Borneo Rain</span>
+                        <span>6:30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <span class="footer-logo">TIPI<span>AN</span></span>
+                    <p>Premium Essential Oil from the heart of Kalimantan. Natural, sustainable, and crafted with care for your wellbeing.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#after-sales">After Sales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact</h3>
+                    <div class="contact-info">
+                        <p>📍 Samarinda, Kalimantan Timur</p>
+                        <p>📞 +62 812-3456-7890</p>
+                        <p>✉️ tipian@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TIPIAN Essential Oil. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Icon -->
+    <div class="cart-icon" id="cart-icon" onclick="openCartModal()">
+        🛒 <span id="cart-count">0</span>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('cart-modal')">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total" style="font-weight: bold; margin: 20px 0;"></div>
+            <button class="btn btn-primary" onclick="completePurchase()">Complete Purchase</button>
+        </div>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div class="modal" id="thankyou-modal">
+        <div class="modal-content" style="text-align: center;">
+            <span class="close-modal" onclick="closeModal('thankyou-modal')">&times;</span>
+            <h2>Thank You for Your Purchase!</h2>
+            <p>Your order has been received and will be processed shortly.</p>
+            <p>We appreciate your trust in TIPIAN Essential Oil!</p>
+            <button class="btn btn-primary" onclick="closeModal('thankyou-modal')">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('login-modal')">&times;</span>
+            <h2>Member Login</h2>
+            <form id="loginForm" onsubmit="handleLoginSubmit(event)">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // ===== Mobile menu =====
+        function toggleMenu() {
+            document.getElementById('main-nav').classList.toggle('active');
+        }
+
+        // ===== Cart =====
+        let cart = [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            updateCartCount();
+            const icon = document.getElementById('cart-icon');
+            icon.classList.remove('added');
+            void icon.offsetWidth; // restart animation
+            icon.classList.add('added');
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cart.length;
+        }
+
+        function openCartModal() {
+            renderCart();
+            document.getElementById('cart-modal').classList.add('open');
+        }
+
+        function renderCart() {
+            const itemsEl = document.getElementById('cart-items');
+            const totalEl = document.getElementById('cart-total');
+            if (cart.length === 0) {
+                itemsEl.innerHTML = '<p>Your cart is empty.</p>';
+                totalEl.textContent = '';
+                return;
+            }
+            itemsEl.innerHTML = cart.map(item => `
+                <div class="cart-item">
+                    <span>${item.name}</span>
+                    <span>Rp ${item.price.toLocaleString('id-ID')}</span>
+                </div>
+            `).join('');
+            const total = cart.reduce((sum, item) => sum + item.price, 0);
+            totalEl.textContent = 'Total: Rp ' + total.toLocaleString('id-ID');
+        }
+
+        function completePurchase() {
+            if (cart.length === 0) return;
+            cart = [];
+            updateCartCount();
+            closeModal('cart-modal');
+            document.getElementById('thankyou-modal').classList.add('open');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('open');
+        }
+
+        // ===== Points calculator =====
+        function calculatePoints() {
+            const amount = parseFloat(document.getElementById('purchase-amount').value) || 0;
+            const returnBottle = document.getElementById('return-bottle').checked;
+            const writeReview = document.getElementById('write-review').checked;
+
+            let points = Math.floor(amount / 1000);
+            if (returnBottle) points += 10;
+            if (writeReview) points += 20;
+
+            document.getElementById('points-result').textContent =
+                'You will earn ' + points.toLocaleString('id-ID') + ' points!';
+        }
+
+        // ===== Music player =====
+        function playTrack(el, title, src) {
+            const player = document.getElementById('audio-player');
+            player.src = src;
+            player.play();
+            document.getElementById('now-playing').textContent = title;
+            document.querySelectorAll('.track').forEach(t => t.classList.remove('playing'));
+            el.classList.add('playing');
+        }
+
+        // ===== Support form =====
+        function handleSupportSubmit(event) {
+            event.preventDefault();
+            alert('Thank you! Your message has been sent. Our team will get back to you soon.');
+            event.target.reset();
+        }
+
+        // ===== Login form =====
+        function handleLoginSubmit(event) {
+            event.preventDefault();
+            alert('Login successful! Welcome back to TIPIAN.');
+            event.target.reset();
+            closeModal('login-modal');
+        }
+    </script>
+</body>
+</html>
